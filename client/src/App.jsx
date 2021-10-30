@@ -24,13 +24,13 @@ const App = () => {
         <>
           <Navbar socket={socket} />
           {posts.map((post) => (
-            <Card key={post.id} post={post} socket={socket} user={user}/>
+            <Card key={post.id} post={post} socket={socket} user={user} />
           ))}
           <span className="username">{user}</span>
         </>
       ) : (
         <div className="login">
-          <h2>Lama App</h2>
+          <h2>Tsogoo App</h2>
           <input
             type="text"
             placeholder="username"
